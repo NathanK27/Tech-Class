@@ -77,4 +77,18 @@ function draw()
   angleMode(DEGREES)
   arc(200, 230, 60, 40, 0, 180, OPEN)
 
+//tail
+  fill(125, 255, 125)
+  arc(200, 80, 40, 40, 90, 0, OPEN)
+  fill(0, 0, 0)
+  rect(160, 80, 60, 1)
+
+//flower
+
+  rect(50, 330, 5, 60)
+  fill(255, 255, 255)
+  circle(52.5, 330, 30)
+  fill(255, 255, 0)
+  circle(52.5, 330, 15)
+ 
 }
