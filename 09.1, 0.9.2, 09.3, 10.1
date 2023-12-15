@@ -1,0 +1,27 @@
+const WEIGHT = 5
+
+function setup() {
+  createCanvas(1000, 1000);
+  background(255);
+}
+
+function draw() {
+  print(mouseIsPressed)
+    
+  if (!mouseIsPressed) {
+    ellipse(mouseX, mouseY, 50)
+  }
+
+  if (keyIsPressed) {
+    fill(random(255), random(255), random(255))
+    rect(random(1000), random(1000), random(100), random(100))
+  }
+
+  if (mouseButton == LEFT) {
+    print("<-")
+  }
+
+  if (mouseButton == RIGHT) {
+    print("->")
+  }
+}
