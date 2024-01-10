@@ -1,0 +1,84 @@
+function setup() {
+
+createCanvas(400, 400);
+
+strokeWeight(4);
+
+}
+
+function pig(x, y) {
+
+background(125, 255, 125);
+
+fill(255, 192, 203);
+
+// legs
+
+rect(125 - x, 250 - y, 25, 125);
+
+rect(250 - x, 250 - y, 25, 125);
+
+fill(0);
+
+rect(125 - x, 350 - y, 25, 25);
+
+rect(250 - x, 350 - y, 25, 25);
+
+fill(255, 192, 203);
+
+// body
+
+ellipse(200 - x, 200 - y, 250, 200);
+
+// ears
+
+ellipse(165 - x, 150 - y, 25, 50);
+
+ellipse(235 - x, 150 - y, 25, 50);
+
+// face
+
+circle(200 - x, 200 - y, 125);
+
+// left eye
+
+fill(255);
+
+circle(175 - x, 170 - y, 25);
+
+fill(0);
+
+circle(175 - x, 170 - y, 10);
+
+// right eye
+
+fill(255);
+
+circle(225 - x, 170 - y, 25);
+
+fill(0);
+
+circle(225 - x, 170 - y, 10);
+
+// nose
+
+fill(255, 192, 203);
+
+ellipse(200 - x, 210 - y, 50, 25);
+
+fill(0);
+
+circle(190 - x, 210 - y, 10);
+
+circle(210 - x, 210 - y, 10);
+
+// mouth
+
+noFill();
+
+arc(200 - x, 225 - y, 50, 50, PI * .25, PI * .75);
+}
+
+function draw() {
+  pig(50, 0)
+}
