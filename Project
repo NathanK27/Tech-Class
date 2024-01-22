@@ -25,12 +25,14 @@ function setup() {
   text('7: Green', 0, 295)
   text('8: Blue', 0, 310)
   text('Use left and right click as well as  to switch between the orange and apple' , 0, 325)
-  text('Go to the read me for more information', 0, 340) //all the information for the player
+  text('Go to the read me for more information', 0, 340)//all the information for the player
+  text('As a punishment going passed the edge makes the colour', 0, 355)
 }
 
 function heart() { //code for the heart drawing
 
   //Heart on the Right
+  noStroke() //no outline
   fill(0); 
   rectangle(210 - c, 0)
   rectangle(235 - c, 0)
@@ -231,6 +233,7 @@ function draw() {
 
   else if (y > 149) {
     if (y == 150) {
+      noStroke()
       noFill()
     }
     y = 150
