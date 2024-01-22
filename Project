@@ -1,0 +1,319 @@
+let x = 0
+let y = 0
+c = 0
+
+function setup() {
+  createCanvas(360, 315);
+  background(80, 80, 80);
+
+  //Divider
+  noStroke()
+  fill(255);
+  rect(175, 0, 10, 175);
+  rect(0, 175, 360, 140)
+
+  //Information
+  fill(0)
+  text('Use Arrow Keys to Move', 0, 190)
+  text('1: No Colour (You can freely move around)', 0, 205)
+  text('2: White', 0, 220)
+  text('3: Black', 0, 235)
+  text('4: Red', 0, 250)
+  text('5: Dark Red', 0, 265)
+  text('6: Orange', 0, 280)
+  text('7: Green', 0, 295)
+  text('Use left and right click to switch between the orange and apple' , 0, 310)
+}
+
+function heart() {
+
+  //Heart on the Right
+  fill(0);
+  rectangle(210 - c, 0)
+  rectangle(235 - c, 0)
+  rectangle(260 - c, 25)
+  rectangle(285 - c, 0)
+  rectangle(310 - c, 0)
+  rectangle(335 - c, 25)
+  rectangle(335 - c, 50)
+  rectangle(335 - c, 75)
+  rectangle(310 - c, 100)
+  rectangle(285 - c, 125)
+  rectangle(260 - c, 150)
+  rectangle(235 - c, 125)
+  rectangle(210 - c, 100)
+  rectangle(185 - c, 75)
+  rectangle(185 - c, 75)
+  rectangle(185 - c, 50)
+  rectangle(185 - c, 25)
+
+  fill(255)
+  rectangle(260 - c, 0)
+  rectangle(335 - c, 0)
+  rectangle(335 - c, 100)
+  rectangle(335 - c, 125)
+  rectangle(335 - c, 150)
+  rectangle(310 - c, 150)
+  rectangle(285 - c, 150)
+  rectangle(310 - c, 125)
+  rectangle(185 - c, 150)
+  rectangle(185 - c, 125)
+  rectangle(185 - c, 100)
+  rectangle(210 - c, 125)
+  rectangle(210 - c, 150)
+  rectangle(235 - c, 150)
+  rectangle(210 - c, 25)
+  rectangle(185 - c, 0)
+
+  fill(255, 0, 0)
+  rectangle(235 - c, 25)
+  rectangle(285 - c, 25)
+  rectangle(260 - c, 50)
+  rectangle(285 - c, 50)
+  rectangle(235 - c, 50)
+  rectangle(210 - c, 50)
+  rectangle(210 - c, 75)
+  rectangle(235 - c, 75)
+  rectangle(260 - c, 75)
+  rectangle(285 - c, 75)
+  rectangle(235 - c, 100)
+  rectangle(260 - c, 100)
+
+  fill(200, 0, 0)
+  rectangle(310 - c, 25)
+  rectangle(310 - c, 50)
+  rectangle(310 - c, 75)
+  rectangle(285 - c, 100)
+  rectangle(260 - c, 125)
+
+}
+
+function orange() {
+
+  fill(0)
+  rectangle(235 - c, 0)
+  rectangle(260 - c, 0)
+  rectangle(285 - c, 0)
+  rectangle(210 - c, 25)
+  rectangle(185 - c, 50)
+  rectangle(185 - c, 75)
+  rectangle(185 - c, 100)
+  rectangle(210 - c, 125)
+  rectangle(235 - c, 150)
+  rectangle(260 - c, 150)
+  rectangle(285 - c, 150)
+  rectangle(310 - c, 125)
+  rectangle(335 - c, 100)
+  rectangle(335 - c, 75)
+  rectangle(335 - c, 50)
+  rectangle(310 - c, 25)
+
+  fill(255)
+  rectangle(185 - c, 0)
+  rectangle(210 - c, 0)
+  rectangle(310 - c, 0)
+  rectangle(335 - c, 0)
+  rectangle(185 - c, 25)
+  rectangle(335 - c, 25)
+  rectangle(185 - c, 125)
+  rectangle(335 - c, 125)
+  rectangle(185 - c, 150)
+  rectangle(210 - c, 150)
+  rectangle(310 - c, 150)
+  rectangle(335 - c, 150)
+
+  fill(0, 255, 0)
+  rectangle(260 - c, 25)
+  rectangle(260 - c, 50)
+  rectangle(260 - c, 75)
+  rectangle(235 - c, 50)
+  rectangle(285 - c, 50)
+
+  fill(255, 165, 0)
+  rectangle(235 - c, 25)
+  rectangle(285 - c, 25)
+  rectangle(210 - c, 50)
+  rectangle(310 - c, 50)
+  rectangle(210 - c, 75)
+  rectangle(235 - c, 75)
+  rectangle(285 - c, 75)
+  rectangle(310 - c, 75)
+  rectangle(210 - c, 100)
+  rectangle(235 - c, 100)
+  rectangle(260 - c, 100)
+  rectangle(285 - c, 100)
+  rectangle(310 - c, 100)
+  rectangle(235 - c, 125)
+  rectangle(260 - c, 125)
+  rectangle(285 - c, 125)
+}
+
+function penguin() {
+  fill(0)
+  rectangle(235 - c, 0)
+  rectangle(260 - c, 0)
+  rectangle(285 - c, 0)
+  rectangle(210 - c, 25)
+  rectangle(310 - c, 25)
+  rectangle(185 - c, 50)
+  rectangle(335 - c, 50)
+  rectangle(185 - c, 75)
+  rectangle(335 - c, 75)
+  rectangle(335 - c, 100)
+  rectangle(185 - c, 100)
+  rectangle(210 - c, 125)
+  rectangle(260 - c, 125)
+  rectangle(310 - c, 125)
+  rectangle(235 - c, 150)
+  rectangle(285 - c, 150)
+  rectangle(235 - c, 50)
+  rectangle(285 - c, 50)
+
+  fill(255)
+  rectangle(185 - c, 0)
+  rectangle(210 - c, 0)
+  rectangle(310 - c, 0)
+  rectangle(335 - c, 0)
+  rectangle(185 - c, 25)
+  rectangle(335 - c, 25)
+  rectangle(185 - c, 125)
+  rectangle(335 - c, 125)
+  rectangle(185 - c, 150)
+  rectangle(210 - c, 150)
+  rectangle(310 - c, 150)
+  rectangle(335 - c, 150)
+  rectangle(210 - c, 100)
+  rectangle(235 - c, 100)
+  rectangle(260 - c, 100)
+  rectangle(285 - c, 100)
+  rectangle(310 - c, 100)
+  rectangle(260 - c, 150)
+
+  fill(0, 180, 255)
+  rectangle(235 - c, 25)
+  rectangle(260 - c, 25)
+  rectangle(285 - c, 25)
+  rectangle(210 - c, 50)
+  rectangle(260 - c, 50)
+  rectangle(310 - c, 50)
+  rectangle(210 - c, 75)
+  rectangle(235 - c, 75)
+  rectangle(285 - c, 75)
+  rectangle(310 - c, 75)
+
+  fill(255, 165, 0)
+  rectangle(260 - c, 75)
+  rectangle(235 - c, 125)
+  rectangle(285 - c, 125)
+}
+
+function rectangle(a, b) {
+  rect(a, b, 25, 25)
+}
+
+function draw() {
+  
+  rectangle(x, y)
+
+  if (x > 149) {
+    if (x == 150) {
+      noFill()
+    }
+    x = 150
+  }
+
+  else if (x < 0) {
+    x = 0
+  }
+
+  else if (y > 149) {
+    if (y == 150) {
+      noFill()
+    }
+    y = 150
+  }
+
+  else if (y < 0) {
+    y = 0
+  }
+}  
+
+function keyPressed() {
+  if (keyCode === 38) {
+    y = y - 25
+  }
+
+  else if (keyCode === 37) {
+    x = x - 25
+  }
+
+  else if (keyCode === 40) {
+    y = y + 25
+  }
+
+  else if (keyCode === 39) {
+    x = x + 25
+  }
+
+  else if (keyCode === 50) {
+    fill(255)
+  }
+
+  else if (keyCode === 51) {
+    fill(0)
+  }
+
+  else if (keyCode === 49) {
+    noFill()
+  }
+
+  else if (keyCode === 52) {
+    fill(255, 0, 0)
+  }
+
+  else if (keyCode === 53) {
+    fill(200, 0, 0)
+  }
+
+  else if (keyCode === 54) {
+    fill(255, 165, 0)
+  }
+
+  else if (keyCode === 55) {
+    fill(0, 255, 0)
+  }
+
+  else if (keyCode === 56)
+    fill(0, 180, 255)
+
+  else if (keyCode === 90) {
+    c = 185
+    heart()
+    c = 0
+  }
+
+  else if (keyCode === 88) {
+    c = 185
+    orange()
+    c = 0
+  }
+
+  else if (keyCode === 32) {
+    penguin();
+  }
+
+  else if (keyCode === 67) {
+    c = 185
+    penguin()
+    c = 0
+  }
+}
+
+function mousePressed() {
+  if (mouseButton == LEFT) {
+    heart()
+  }
+  if (mouseButton == RIGHT) {
+    orange()
+  }
+}
