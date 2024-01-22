@@ -26,7 +26,7 @@ function setup() {
   text('8: Blue', 0, 310)
   text('Use left and right click as well as  to switch between the orange and apple' , 0, 325)
   text('Go to the read me for more information', 0, 340)//all the information for the player
-  text('As a punishment going passed the edge makes the colour', 0, 355)
+  text('As a punishment going passed the edge makes the colour clear', 0, 355)
 }
 
 function heart() { //code for the heart drawing
